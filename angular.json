@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-pro": {
+    "angular-components-course": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-pro",
+            "outputPath": "dist/angular-components-course",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-pro:build"
+            "browserTarget": "angular-components-course:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-pro:build:production"
+              "browserTarget": "angular-components-course:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-pro:build"
+            "browserTarget": "angular-components-course:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "angular-pro-e2e": {
+    "angular-components-course-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-pro:serve"
+            "devServerTarget": "angular-components-course:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-pro:serve:production"
+              "devServerTarget": "angular-components-course:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "angular-pro"
+  "defaultProject": "angular-components-course"
 }
