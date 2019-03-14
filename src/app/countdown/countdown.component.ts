@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.scss']
 })
-export class CountdownComponent{
+export class CountdownComponent {
 
   constructor() { }
 
